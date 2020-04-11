@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> {{ title }} </title>
+<style >
+  html{
+    z-index: -45;
+     background-image: url({% static 'LargeBG.png' %}) ;
+ background-repeat:no-repeat;
+ background-position: center;
+ background-size: stretch;
+  }
+body{
+ background-image: url({% static 'LargeBG.png' %}) ;
+ background-repeat:no-repeat;
+ background-position: center;
+ background-size: cover;
+ padding:0;
+ margin:0;
+ font-family:"Comic Sans MS";
+ height: 100vh;
+ background-color: blue;
+ /*color: #BFD0D6;*/
+ color: rgb(180,285,122);
+ text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*background-color: DodgerBlue;*/
+
+  height: 100vh;
+  flex-wrap: wrap;
+
+}
+
+.flex-items  {
+  /*background-color: #f1f1f1;*/
+  width: 100%;
+  margin: 0px;
+  margin-top: 4px;
+  text-align: center;
+
+  font-size: 30px;
+}
+#menuLogo{
+  height: 150px;
+  width: 400px;
+  position: relative;
+
+}
+#heading{
+ font-size: 12px;
+ color: #BFD0D6;
+ text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+ opacity: 0.7;
+
+
+}
+
+
+/*//////////////////////////////////*/
+.flex-container-2{
+  display: flex;
+  justify-content: center;
+  /*background-color: yellow;*/
+  height: 80px;
+  flex-wrap: wrap;
+}
+.flex-items-2{
+  /*background-color: green;*/
+  height: inherit;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+#play{
+  height: inherit;
+  width: 240px;
+  background-image: url({% static 'green/uiAtlas.png' %}) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+
+}
+#gather,#watch{
+  height: inherit;
+  width: 80px;
+  justify-content: center;
+  background-image: url({% static 'buttonSquare.png' %}) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 15px;
+}
+.playGather{
+  position: relative;
+  top:10%;
+}
+#play p{
+  position: relative;
+margin: 0;
+padding: 0;
+top: 25%;
+  
+}
+/*//////// 3rd started /////////////*/
+.flex-container-3{
+  display: flex;
+  justify-content: center;
+  /*background-color: yellow;*/
+  height: inherit;
+  flex-wrap: wrap;
+}
+.flex-items-3{
+  background-image: url({% static 'green/uiAtlas.png' %}) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-color: green;*/
+  height: inherit;
+  width: 140px;
+  margin-right: 1px;
+  margin-left: 1px;
+
+}
+.bottomBTN{
+  position: relative;
+  top:10%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  height: 40px;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="flex-container">
+
+  <div class="flex-items"> <p id="heading"> Hello bombsquaders!!!! Welcome to the 'The BombSquad Game' site where you will get almost all stuff in one place. This page is under contrustion.  </p>  </div>
+
+  <div class="flex-items"> <img src="{% static 'TheBombSquadGame.png' %}" id="menuLogo"> </div>
+
+  <div class="flex-items">
+        <div class="flex-container-2">
+          <div class="flex-items-2" id="gather"> <p class="playGather">Gather</p> </div>  
+          <div class="flex-items-2" id="play"> <p >Play</p> </div>  
+          <div class="flex-items-2" id="watch"> <p class="playGather">Watch</p> </div>  
+        </div>
+
+  <div class="flex-items">
+        <div class="flex-container-3"> 
+          <div class="flex-items-3"> <p class="bottomBTN"> text </p>   </div>
+          <div class="flex-items-3"> <p class="bottomBTN"> text </p>   </div>
+          <div class="flex-items-3"> <p class="bottomBTN"> text </p>   </div>
+          <div class="flex-items-3"> <p class="bottomBTN"> text </p>   </div>
+          <div class="flex-items-3"> <p class="bottomBTN"> text </p>   </div>
+        </div>  
+  </div>
+</div> 
+</body>
+</html>  
