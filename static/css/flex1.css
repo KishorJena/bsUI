@@ -1,0 +1,25 @@
+.flex-items {
+    /*background-color: #f1f1f1;*/
+    width: 100%;
+    margin: 0px;
+    margin-top: 4px;
+    text-align: center;
+
+    font-size: 30px;
+}
+
+#menuLogo {
+    height: 150px;
+    width: 400px;
+    position: relative;
+
+}
+
+#heading {
+    font-size: 12px;
+    color: #BFD0D6;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+
+
+}

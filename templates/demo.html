@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body{
-  padding: 0;
-  margin: 0;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto ;
-  grid-template-rows: 40px 350px 150px 100px ;
-  grid-gap: 4px;
-  padding: 0px;
-  background-color: #FF96F3;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
 
-}
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 40px 350px 150px 100px;
+      grid-gap: 4px;
+      padding: 0px;
+      background-color: #FF96F3;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-}
+    }
 
-.flex-container{
-  display: flex;
-  justify-content: center;
-  background-color: DodgerBlue;
-  align-items: center;
-  padding-left: 400px;
-  padding-right: 400px;
-}
-.flex-item{
-  background-color: #f1f1f1;
-  width: 100%;
-  margin: 10px;
-  text-align: center;
-  line-height: 125px;
-  font-size: 30px;
-  flex-wrap: wrap;
-}
-.flex2-container{
-  display: flex;
-  justify-content: center;
-  background-color: DodgerBlue;
-  align-items: center;
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
 
-}
-.flex2-item{
-  background-color: #f1f1f1;
-  width: 100%;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-.bigLogo{
-  width: 400px;
-  height: 200px;
-  position: relative;
-  left:35%;
-  top: 25%;
-  background-color: red;
-}
-</style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      background-color: DodgerBlue;
+      align-items: center;
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+
+    .flex-item {
+      background-color: #f1f1f1;
+      width: 100%;
+      margin: 10px;
+      text-align: center;
+      line-height: 125px;
+      font-size: 30px;
+      flex-wrap: wrap;
+    }
+
+    .flex2-container {
+      display: flex;
+      justify-content: center;
+      background-color: DodgerBlue;
+      align-items: center;
+
+    }
+
+    .flex2-item {
+      background-color: #f1f1f1;
+      width: 100%;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    .bigLogo {
+      width: 400px;
+      height: 200px;
+      position: relative;
+      left: 35%;
+      top: 25%;
+      background-color: red;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="grid-container">
-  <div class="grid-item">Notifications goes here</div>
-  <div class="grid-item">
-    <div class="bigLogo">
-      
+  <div class="grid-container">
+    <div class="grid-item"> hey Notifications goes here</div>
+    <div class="grid-item">
+      <div class="bigLogo">
+
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="flex-container">
+
+        <div class="flex-item flex-gather"> Gather </div>
+        <div class="flex-item flex-play"> Play </div>
+        <div class="flex-item flex-watch"> Watch </div>
+
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="flex2-container">
+
+        <div class="flex2-item "> Gather </div>
+        <div class="flex2-item "> Play </div>
+        <div class="flex2-item "> Watch </div>
+        <div class="flex2-item "> Watch </div>
+        <div class="flex2-item "> Watch </div>
+
+      </div>
     </div>
   </div>
-  <div class="grid-item">
-    <div class="flex-container">
 
-      <div class="flex-item flex-gather"> Gather </div>
-      <div class="flex-item flex-play"> Play </div>
-      <div class="flex-item flex-watch"> Watch </div>
+  <script type="text/javascript">
 
-    </div> 
-  </div>  
-  <div class="grid-item">
-    <div class="flex2-container">
-
-      <div class="flex2-item "> Gather </div>
-      <div class="flex2-item "> Play </div>
-      <div class="flex2-item "> Watch </div>
-      <div class="flex2-item "> Watch </div>
-      <div class="flex2-item "> Watch </div>
-
-    </div> 
-  </div>  
-</div>
-
-<script type="text/javascript">
-
-</script>
+  </script>
 </body>
+
 </html>
